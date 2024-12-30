@@ -1,0 +1,10 @@
+{
+  "appId": "XML to base64 to JSON convert ver 1.0.2",
+  "productName": "XML to base64 to JSON convert ver 1.0.2",
+  "directories": {
+    "output": "XML to base64 to JSON convert ver 1.0.2"
+  },
+  "win": {
+    "target": "nsis"
+  }
+}

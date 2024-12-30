@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>XML to base64 to JSON convert ver 1.0.2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-section">
+        <input type="password" class="password-input" placeholder="Enter license key" />
+        <p class="casper-text">demo key: yK0#-ZeBk-u75L-j@lM</p>
+        <div class="convert-button"><p>Select XML file</p></div>
+      </div>
+      <div class="central-section">
+        <textarea name="json" cols="30" rows="15" placeholder="JSON will be here"></textarea>
+      </div>
+      <div class="footer-section">
+        <div class="copy-button" onclick="copyData()"><p>Copy</p></div>
+        <div class="save-button" onclick="saveFile()"><p>Save</p></div>
+        <div class="author">
+          <a target="_blank" class="author-link" onclick="goToAemorozovCom('https://aemorozov.com')">aemorozov</a>
+        </div>
+      </div>
+    </div>
+    <script src="app_function_script.js"></script>
+  </body>
+</html>

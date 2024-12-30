@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Aleksei Morozov developing. Everyday tools by Morozov OS." />
+  <meta http-equiv="content-language" content="en-US,en-GB" />
+  <title>Aleksei Morozov developing. Everyday tools by Morozov OS.</title>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aleksei Morozov developing. Everyday tools by Morozov OS." />
+  <meta property="og:description"
+    content="Aleksei Morozov developing. Everyday tools by Morozov OS." />
+  <meta property="og:url" content="https://aemorozov.com/" />
+  <meta property="og:site_name" content="Aleksei Morozov developing. Everyday tools by Morozov OS." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://aemorozov.com/icon/apple-touch-icon.png" />
+  <meta property="og:image" content="https://aemorozov.com/icon/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="./icon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="16x16" href="./icon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="32x32" href="./icon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="./icon/android-chrome-512x512.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="./icon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./icon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./icon/android-chrome-512x512.png" />
+  <link rel="manifest" href="./icon/site.webmanifest" crossorigin="use-credentials" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./icon/android-chrome-192x192.png" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+<body>
+  <div class="container pointer-events-none">
+    <div class="top-line">
+      <div style="display: flex; align-items: center">
+        <img class="img-top-line" src="./icon/favicon-32x32.png" alt="icon" />
+        <h1 class="p-top-line">Free mass QRs generator v 1.0</h1>
+      </div>
+      <div class="slide-down-button slide-down-container">╳</div>
+    </div>
+    <div class="content-with-content">
+      <div class="amount_block">
+        <input class="how-many-qr-codes" type="number" placeholder="How many unique QRs do you need?*"
+          onkeypress="if(this.value.length >= 5) return false;" min="1" max="99999" />
+      </div>
+      <div class="more_settings_button">Optional settings</div>
+      <div class="settings_block">
+        <input class="qr-code-length" type="number" placeholder="What QR code length do you need?" min="1" max="99"
+          onkeypress="if(this.value.length >= 2) return false;" />
+        <input class="start-value" type="number" placeholder="Start value" min="0"
+          onkeypress="if(this.value.length >= 10) return false;" />
+        <input class="prefix" type="text" placeholder="Prefix" onkeypress="if(this.value.length >= 20) return false;" />
+        <input class="suffix" type="text" placeholder="Suffix" onkeypress="if(this.value.length >= 20) return false;" />
+        <select class="selectPaperSize">
+          <option>Paper size: А4</option>
+          <!-- <option>Paper size: А3</option>
+            <option>Paper size: А2</option>
+            <option>Paper size: А1</option>
+            <option>Paper size: А0</option> -->
+        </select>
+      </div>
+      <button class="create_XLS_button">1. Create 'data.xlsx'</button>
+      <button class="create_button">2. Create 'QRs.pdf'</button>
+    </div>
+  </div>
+  <div class="readme-container pointer-events-none">
+    <div class="top-line">
+      <div style="display: flex; align-items: center">
+        <img class="img-top-line" src="./icon/text-x-readme-icon.png" alt="icon" />
+        <p class="p-top-line">About me</p>
+      </div>
+      <div class="slide-down-button slide-down-readme">╳</div>
+    </div>
+    <div class="text-zone">
+      <div class="text-readme">
+         <strong style="display: block; margin-top: 20px;">Attention! Be careful with QR generator. It will use your browser for make the QRs and if you want to create
+          more than 10 000 QRs, you should wait some time for the process (maybe 20-30 minutes).</strong>
+          <hr />
+        <h2 class="h2-readme">Specialist profile: Aleksei Morozov</h2>
+        <p class="p-readme">
+          <strong>Web Developer, <br>SEO specialist, <br>IT Systems Administrator</strong>
+        </p>
+        <h3>Contacts:</h3>
+        <p class="p-readme">
+          <ul>
+            <li>Phone: +40 (799) 29-30-14</li>
+            <li>Email: <a href="mailto:mr.aemorozov@gmail.com" target="_blank">mr.aemorozov@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/aemorozov" target="_blank">linkedin.com/in/aemorozov</a></li>
+            <li>GitHub: <a href="https://github.com/aemorozov" target="_blank">github.com/aemorozov</a></li>
+          </ul>
+        </p>
+        <h3>Profile summary</h3>
+        <p class="p-readme">
+          Aleksei Morozov is an experienced frontend developer and IT system administrator with over 4 years of commercial experience and in-depth knowledge in electronics diagnostics and repair. He combines technical skills in development and user support with a long-standing record of problem-solving in hardware maintenance and repair. His approach is rooted in systematization, process improvement, and creating optimal solutions.
+        </p>
+        <hr />
+        <h3>Core competencies:</h3>
+        <p class="p-readme">
+        <ul>
+          <li><strong>Web Development:</strong> HTML5, CSS3, SCSS, JavaScript, React JS, responsive design and cross-browser compatibility. Proficient with WordPress, Tilda, and CS-Cart platforms. Aleksei has participated in over 20 projects, from corporate websites to specialized applications with a strong focus on SEO and performance.</li>
+          <li><strong>Administration and IT support:</strong> skilled in administering Windows and MacOS operating systems, managing user accounts, supporting MS Office, and using ticketing systems (such as Jira, AmoCRM, RemOnline). Service Desk and QA experience enable him to effectively handle incidents and provide user support.</li>
+          <li><strong>Electronics diagnostics and repair:</strong> over 7 years of experience in electronics diagnostics and repair (laptops, mobile phones), including running his own repair shop. Skilled in diagnosing and resolving both hardware and software issues. His attention to detail and ability to find optimal solutions ensure a high level of customer service.</li>
+        </ul>
+        </p>
+        <h3>Professional Experience:</h3>
+        <p class="p-readme">
+          <ul>
+            <li><strong>Lead Frontend Developer</strong> at Akula OPT. <br>June 2023 – Present. <br>Developer and administrator for online stores based on CS-Cart. Responsible for fixing UI bugs, optimizing page loading speed, adding new features, and integrating with 1C. Works with MySQL databases and APIs.</li>
+            <li><strong>Freelance Fullstack Developer.</strong><br>March 2021 – June 2023. <br>Involved in the development and support of various projects using React JS, Next JS, Node JS, and other tools. Projects included building medical applications, SEO-optimized websites, a QR code generator, and Windows app APIs.</li>
+            <li><strong>QA Specialist</strong> at Yandex. <br>March 2020 – March 2021. <br>Quality control and testing of Yandex applications (Drive, Maps, and Browser). Responsible for bug detection and user support.</li>
+            <li><strong>Electronics Repair Specialist</strong> at Lenina19. <br>September 2015 – March 2022. <br>Owner and manager of an electronics repair shop, performing diagnostics and repairs on mobile devices and laptops. Provided customer consultation, explaining technical details and suggesting optimal solutions.</li>
+          </ul>
+        </p>
+        <h3>Additional information:</h3>
+        <p class="p-readme">
+          <ul>
+            <li><strong>Location:</strong> Bucharest, Romania. Open to relocation.</li>
+            <li><strong>Languages:</strong> Russian, English, Romanian (A1).</li>
+            <li><strong>Education:</strong> Rolling Scopes School (JavaScript/Frontend, 2022); Geek Brains (QA / Manual Testing / Java / Databases).</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="snake-container body pointer-events-none">
+    <div class="top-line">
+      <div style="display: flex; align-items: center">
+        <img class="img-top-line" src="./icon/snake.jpg" alt="icon" />
+        <p class="p-top-line">Snake 1.5</p>
+      </div>
+      <div class="slide-down-button slide-down-snake">╳</div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; height: calc(100% - 31px);">
+    <div class="start_game" id="start_game">
+      <h2>Snake_1.5</h2>
+      <p>Select a level:</p>
+      <p>
+        <a href="##" class="level" id="10" speed="200">1</a>
+        <a href="##" class="level" id="15" speed="150">2</a>
+        <a href="##" class="level" id="20" speed="100">3</a>
+      </p>
+      <a href="##" class="startButton" id="startButton">Start</a>
+    </div>
+    <div class="container_snake" id="board"></div>
+    <div class="game_over" id="game_over">
+      <p>You've run into a tail</p>
+      <p>Score: <span class="score" id="score"></span></p>
+      <p><a href="##" class="button" id="restart_button">Start over</a></p>
+    </div>
+  </div>
+</div>
+  <div class="form-to-telegram-container body">
+    <div class="top-line">
+      <div style="display: flex; align-items: center">
+        <img class="img-top-line" src="./icon/tg.png" alt="icon" />
+        <p class="p-top-line">Form To Telegram</p>
+      </div>
+      <div class="slide-down-button slide-down-form-to-telegram">╳</div>
+    </div>
+    <div class="form-to-telegram-content">
+      <h2>Contact form</h2>
+      <p>You can send me your contacts to my telegram bot.</p>
+      <form>
+        <input type="text" class="name" id="name" name="name" placeholder="Name *" /><br>
+        <input type="text" id="contact" class="contact" name="contact"  placeholder="Your Telegram (with @) or WhatsApp phone *" />
+        <textarea class="form-to-telegram-textarea text" id="text" name="text" placeholder="Information about your project *"></textarea>
+        <button class="form_to_telegram_button send_button" type="submit" disabled>Send Form to my Telegram</button>
+      </form>
+      <div class="message-sended">
+        <img src="./img/png-transparent-check-mark-computer-icons-green-tick-miscellaneous-angle-text-thumbnail.png" alt="Message sended" class="sended-image" />
+        <p>Message sended</p>
+      </div>
+    </div>
+  </div>
+    <div id="chat-container">
+      <div id="messages" class="messages">
+        <div class="message bot-message">Hello! I'm Morozov Aleksei's Assistant. I work with OpenAI API and gpt-4o-mini model. Ask me something.</div>
+      </div>
+      
+      <div id="input-container">
+        <input type="text" id="user-input" placeholder="Enter text..." />
+        <button id="send-button">Отправить</button>
+      </div>
+  </div>
+</div>
+<div class="morozov-os-container">
+  <p class="morozov-os-p">Morozov OS. Update December 30, 2024. Version 1.0.2</p>
+  <p class="morozov-os-p" style="margin-left: 20px;">- Add ChatGPT Assistant</p>
+  <p class="morozov-os-p">Next update January 30, 2025</p>
+</div>
+  <div class="menu-bar">
+    <div>
+      <div class="readme-icon icon">
+        <img src="./icon/text-x-readme-icon.png" alt="icon readme" class="icon-img icon-img-readme " />
+      </div>
+      <p class="icon-text">About me</p>
+    </div>
+    <div>
+      <div class="generator-icon icon">
+        <img src="./icon/android-chrome-192x192.png" alt="icon qr" class="icon-img icon-img-qr" />
+      </div>
+      <p class="icon-text">QR Gen</p>
+    </div>
+    <div>
+      <div class="snake-icon icon">
+        <img src="./icon/snake.jpg" alt="icon snake" class="icon-img icon-img-snake" />
+      </div>
+      <p class="icon-text">Snake 1.5</p>
+    </div>
+    <div>
+      <div class="form-to-telegram-icon icon">
+        <img src="./icon/tg.png" alt="icon form to telegram" class="icon-img icon-img-form-to-telegram " />
+      </div>
+      <p class="icon-text">FormToTelegram</p>
+    </div>
+    <div>
+      <div class="github-icon icon">
+        <a href="https://github.com/aemorozov" alt="Morozov GitHub" target="_blank">
+          <img src="./img/github_logo.png" alt="github" class="icon-img icon-img-github" />
+        </a>
+      </div>
+      <p class="icon-text">GitHub<span class="outgoing-link"></span></p>
+    </div>
+    <div>
+      <div class="li-icon icon">
+        <a href="https://www.linkedin.com/in/aemorozov/" alt="Morozov Linkedin" target="_blank"><img src="./img/LinkedIn_logo.png" alt="linkedin" class="icon-img icon-img-li" /></a>
+      </div>
+      <p class="icon-text">Linkedin<span class="outgoing-link"></span></p>
+    </div>
+  </div>
+</body>
+</html>

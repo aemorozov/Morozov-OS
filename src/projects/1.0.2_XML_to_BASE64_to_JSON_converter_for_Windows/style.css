@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  background-color: #1e1e1e;
+}
+
+*[unselectable="on"] {
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  margin-top: 20px;
+  max-width: 275px;
+  margin: 20px auto 0 auto;
+}
+
+.top-section {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.password-input {
+  margin: 0 auto 0 auto;
+  width: 97%;
+  font-family: monospace;
+}
+
+.central-section {
+  margin-top: 15px;
+  text-align: center;
+}
+
+textarea {
+  margin: 0 auto;
+}
+
+.footer-section {
+  margin-top: 10px;
+}
+
+.convert-button {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+  -webkit-box-shadow: 0px 1px 4px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0px 1px 4px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 4px 2px rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.05s ease;
+  max-width: 275px;
+}
+
+.save-button,
+.copy-button {
+  width: 100%;
+  height: 40px;
+  background-color: cadetblue;
+  -webkit-box-shadow: 0px 1px 4px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0px 1px 4px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 4px 2px rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px auto;
+  transition: 0.05s ease;
+  max-width: 275px;
+}
+
+.click01 {
+  transform: translateY(1px);
+}
+
+.author {
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.author-link {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+  cursor: pointer;
+}
+
+.input-for-FA > p,
+.input-for-SVT > p,
+.convert-button > p,
+.save-button > p {
+  cursor: pointer;
+}
+
+.casper-text {
+  font-size: 10px;
+  color: rgb(133, 105, 69);
+  margin: 2px auto 5px auto;
+  padding: 0;
+}

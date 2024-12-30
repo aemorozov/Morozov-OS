@@ -1,0 +1,46 @@
+.content {
+    width: fit-content;
+    margin: 100px auto;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.line-1 {
+    color: #FF00FF;
+    font-size: 80px;
+    margin: 20px;
+}
+
+.line-2 {
+    color: #4169E1;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.line-3 {
+    color: #FF4500;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.line-4 {
+    color: #FFD700;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.line-5 {
+    color: #1E90FF;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.opacity-0-styling {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.opacity-1-styling {
+    opacity: 1;
+}
+
