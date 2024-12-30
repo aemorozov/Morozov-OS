@@ -11,6 +11,7 @@ const container = document.querySelector('.container')
 const READMEContainer = document.querySelector('.readme-container')
 const SNAKEContainer = document.querySelector('.snake-container')
 const formToTelegramContainer = document.querySelector('.form-to-telegram-container')
+const chatGPT = document.querySelector('#chat-container')
 
 const slideDownContainerButton = document.querySelector('.slide-down-container')
 const slideDownReadmeButton = document.querySelector('.slide-down-readme')
@@ -147,4 +148,6 @@ setTimeout(() => {
     formToTelegramContainer.classList.add('translateY-for-form-to-telegram')
     iconImgDownFormToTelegramButton.classList.add('opacity1')
     formToTelegramContainer.style.zIndex = zIndex()
+    chatGPT.classList.add('translateY-for-chat-container')
 }, 1100)
+

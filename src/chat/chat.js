@@ -36,29 +36,7 @@ async function sendMessage() {
         const data = await response.json();
         appendMessage(data.reply);
     } catch (error) {
-        console.error("Ошибка:", error);
-        appendMessage("Произошла ошибка. Попробуйте позже.");
+        console.error("Error:", error);
+        appendMessage("Opps, some error! Tell Aleksei about it, please.");
     }
 }
-
-// Scrolling
-
-// const scrollContainer = document.getElementById("chat-container");
-
-// scrollContainer.addEventListener("scroll", () => {
-//     const messages = scrollContainer.querySelectorAll(".message");
-
-//     const scrollTop = scrollContainer.scrollTop;
-//     const scrollHeight = scrollContainer.scrollHeight;
-//     const clientHeight = scrollContainer.clientHeight;
-
-//     messages.forEach((message, index) => {
-//         const messageTop = message.offsetTop;
-//         const messageHeight = message.offsetHeight;
-
-//         // Calculate visibility based on scroll position
-//         const distance = scrollTop - (messageTop - clientHeight);
-//         const opacity = 1 - Math.min(Math.abs(distance / clientHeight), 1);
-//         message.style.opacity = opacity;
-//     });
-// });
