@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <meta name="description"
     content="Aleksei Morozov developing. Everyday tools by Morozov OS." />
   <meta http-equiv="content-language" content="en-US,en-GB" />
@@ -29,6 +29,8 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="./icon/android-chrome-192x192.png" />
   <meta name="theme-color" content="#ffffff" />
+  <meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
 </head>
 <body>
   <div class="container pointer-events-none">
@@ -149,8 +151,8 @@
       <p><a href="##" class="button" id="restart_button">Start over</a></p>
     </div>
   </div>
-</div>
-  <div class="form-to-telegram-container body">
+  </div>
+  <div class="form-to-telegram-container body pointer-events-none">
     <div class="top-line">
       <div style="display: flex; align-items: center">
         <img class="img-top-line" src="./icon/tg.png" alt="icon" />
@@ -173,15 +175,23 @@
       </div>
     </div>
   </div>
-    <div id="chat-container" class="chat-container">
+  <div class="chat-global">
+    <div class="top-line topline-gpt">
+      <div style="display: flex; align-items: center">
+        <img class="img-top-line" src="./icon/chatgpt.png" alt="icon" />
+        <p class="p-top-line">GPT Assistant</p>
+      </div>
+      <div class="slide-down-button slide-down-gpt">╳</div>
+    </div>
+  <div id="chat-container" class="chat-container">
       <div id="messages" class="messages">
         <div class="message bot-message">Hello! I'm Morozov Aleksei's Assistant. I work with OpenAI API and gpt-4o-mini model. Ask me something.</div>
       </div>
-      
       <div id="input-container">
         <input type="text" id="user-input" placeholder="Enter text..." autocomplete="off"/>
-        <button id="send-button">Отправить</button>
+        <button id="send-button" class="send-button">Send</button>
       </div>
+  </div>
   </div>
 </div>
 <div class="morozov-os-container">
@@ -209,10 +219,16 @@
       <p class="icon-text">Snake 1.5</p>
     </div>
     <div>
+      <div class="gpt-icon icon">
+        <img src="./icon/chatgpt.png" alt="chat gpt icon" class="icon-img-gpt opacity1" />
+      </div>
+      <p class="icon-text">GPT Assist</p>
+    </div>
+    <div>
       <div class="form-to-telegram-icon icon">
         <img src="./icon/tg.png" alt="icon form to telegram" class="icon-img icon-img-form-to-telegram " />
       </div>
-      <p class="icon-text">FormToTelegram</p>
+      <p class="icon-text">FormToTG</p>
     </div>
     <div>
       <div class="github-icon icon">

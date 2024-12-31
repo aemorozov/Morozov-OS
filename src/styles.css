@@ -294,12 +294,12 @@ input[type="number"] {
   flex-direction: row;
   position: fixed;
   bottom: 5px;
-  justify-content: center;
+  justify-content: space-between;
   transition: 0.35s ease;
   opacity: 0;
   transform: translateY(5px);
   /* background: rgb(102 71 18 / 75%); */
-  background-color: rgb(0 0 0 / 40%);
+  background-color: rgb(0 0 0 / 60%);
   border-radius: 15px;
   box-shadow: rgba(30, 6, 6, 0.2) 0px 1px 4px;
   flex-wrap: wrap;
@@ -342,6 +342,20 @@ input[type="number"] {
 .icon-img-snake,
 .icon-img-form-to-telegram {
   width: 38px;
+}
+/* 
+.icon-img-form-to-telegram {
+  transform: translateX(-1px);
+} */
+
+.icon-img-gpt {
+  width: 40px;
+  opacity: 0.7;
+  transition: 0.1s ease;
+}
+
+.icon-img-gpt:hover {
+  opacity: 1;
 }
 
 .icon-img-github,
@@ -561,7 +575,7 @@ input[type="number"] {
   }
 
   .menu-bar {
-    width: 238px;
+    width: 300px;
   }
 
   .form-to-telegram-container {
@@ -576,44 +590,77 @@ input[type="number"] {
   }
 }
 
-.chat-container {
-  width: 300px;
+.chat-global {
+  max-width: 520px;
+  width: 95vw;
   height: 400px;
   position: absolute;
-  bottom: 30px;
-  right: 5px;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-container {
   display: flex;
   flex-direction: column;
   height: fit-content;
   max-height: 430px;
   mask-image: linear-gradient(to bottom, transparent, black 6%);
-  font-size: 0.9em;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease;
+}
+
+input,
+textarea {
+  font-size: 16px !important;
 }
 
 .translateY-for-chat-container {
   opacity: 1;
-  bottom: 5px;
+  bottom: 87px;
   pointer-events: all;
 }
 
-@media screen and (max-width: 1080px) {
-  .chat-container {
+/* @media screen and (max-width: 1080px) {
+  .chat-global {
     width: 90vw;
     bottom: 85px;
     left: 5vw;
   }
+} */
+
+.topline-gpt {
+  display: none;
 }
 
 @media screen and (max-width: 640px) {
+  .chat-global {
+    position: fixed;
+    background: #ffffffdd;
+    border-radius: 0 0 10px 10px;
+    height: 70vh;
+    bottom: 1vh;
+  }
   .chat-container {
-    bottom: 162px;
+    max-height: 67vh;
+    margin: 5px;
+  }
+  .bot-message {
+    background-color: #d4d4d1;
+  }
+  .topline-gpt {
+    display: flex;
+    position: absolute;
+    top: -30px;
   }
 }
 
 #messages {
+  padding-top: 10px;
   flex-grow: 1;
   padding-right: 3px;
   overflow-y: auto;
@@ -635,6 +682,7 @@ input[type="number"] {
   border-radius: 5px;
   max-width: 80%;
   opacity: 1;
+
   /* transition: opacity 0.1s ease; */
 }
 .user-message {
@@ -649,7 +697,10 @@ input[type="number"] {
 }
 #input-container {
   display: flex;
-  -webkit-box-shadow: 0px 1px 4px 2px rgba(30, 6, 6, 0.2);
+  border: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-shadow: 10px 1px 4px 2px rgba(30, 6, 6, 0.2);
   -moz-box-shadow: 0px 1px 4px 2px rgba(30, 6, 6, 0.2);
   box-shadow: 0px 1px 4px 2px rgba(30, 6, 6, 0.2);
   border-radius: 5px;
@@ -667,14 +718,29 @@ input[type="number"] {
 #user-input::placeholder {
   color: #ccc;
 }
-#send-button {
+#send-button,
+.close-button {
   padding: 10px;
   border: none;
+  margin: 0;
   background-color: #29343f;
   color: #fff;
   cursor: pointer;
+}
+
+#send-button {
+  padding: 10px 30px;
+  /* margin-right: 10px; */
   border-radius: 0 5px 5px 0;
 }
-#send-button:hover {
-  background-color: #0056b3;
+
+#send-button:hover,
+.close-button:hover {
+  background-color: #171b1d;
+}
+
+.close-button {
+  width: 100px;
+  border-radius: 5px 0 0 5px;
+  background-color: #2f3841;
 }

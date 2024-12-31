@@ -3,12 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const now = new Date()
 
 module.exports = {
     entry: ['./src/index.js', './src/qr/qr.js', './src/snake/snake.js'], // Точка входа для сборки проекта
 
     output: {
-        filename: 'bundle.js', // Имя выходного файла сборки
+        filename: `bundle.js?v${now}`, // Имя выходного файла сборки
         path: path.resolve(__dirname, 'dist'), // Путь для выходного файла сборки
     },
 
@@ -30,7 +31,7 @@ module.exports = {
             ]
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.css', // Название конечного CSS файла
+            filename: `style.css?v${now}`, // Название конечного CSS файла
         }),
     ],
 

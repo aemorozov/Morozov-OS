@@ -11,12 +11,13 @@ const container = document.querySelector('.container')
 const READMEContainer = document.querySelector('.readme-container')
 const SNAKEContainer = document.querySelector('.snake-container')
 const formToTelegramContainer = document.querySelector('.form-to-telegram-container')
-const chatGPT = document.querySelector('#chat-container')
+const chatGPT = document.querySelector('.chat-global')
 
 const slideDownContainerButton = document.querySelector('.slide-down-container')
 const slideDownReadmeButton = document.querySelector('.slide-down-readme')
 const slideDownSnakeButton = document.querySelector('.slide-down-snake')
 const slideDownFormToTelegramButton = document.querySelector('.slide-down-form-to-telegram')
+const slideDownGPT = document.querySelector('.slide-down-gpt')
 
 const iconDownContainerButton = document.querySelector('.generator-icon')
 const iconDownReadmeButton = document.querySelector('.readme-icon')
@@ -27,6 +28,7 @@ const iconImgContainerButton = document.querySelector('.icon-img-qr')
 const iconImgDownReadmeButton = document.querySelector('.icon-img-readme')
 const iconImgDownSnakeButton = document.querySelector('.icon-img-snake')
 const iconImgDownFormToTelegramButton = document.querySelector('.icon-img-form-to-telegram')
+const iconImgGPT = document.querySelector('.icon-img-gpt')
 
 
 let zIndexActual = 0
@@ -135,6 +137,33 @@ iconDownFormToTelegramButton.addEventListener('click', () => {
 
 
 
+chatGPT.addEventListener('click', () => {
+    chatGPT.style.zIndex = zIndex()
+})
+
+iconImgGPT.addEventListener('click', () => {
+    if (chatGPT.classList.contains('translateY-for-chat-container') && chatGPT.style.zIndex == zIndexActual) {
+        chatGPT.classList.remove('translateY-for-chat-container')
+        iconImgGPT.classList.remove('opacity1')
+    } else {
+        if (chatGPT.classList.contains('translateY-for-chat-container') && chatGPT.style.zIndex != zIndexActual) {
+            chatGPT.style.zIndex = zIndex()
+        } else {
+            chatGPT.classList.add('translateY-for-chat-container')
+            iconImgGPT.classList.add('opacity1')
+        }
+    }
+})
+
+slideDownGPT.addEventListener('click', () => {
+    chatGPT.classList.remove('translateY-for-chat-container')
+    iconImgGPT.classList.remove('opacity1')
+})
+
+
+
+
+
 
 setTimeout(() => {
     body.classList.add('opacity1')
@@ -145,9 +174,10 @@ setTimeout(() => {
 }, 350)
 
 setTimeout(() => {
-    formToTelegramContainer.classList.add('translateY-for-form-to-telegram')
-    iconImgDownFormToTelegramButton.classList.add('opacity1')
-    formToTelegramContainer.style.zIndex = zIndex()
+    // formToTelegramContainer.classList.add('translateY-for-form-to-telegram')
+    // iconImgDownFormToTelegramButton.classList.add('opacity1')
+    // formToTelegramContainer.style.zIndex = zIndex()
     chatGPT.classList.add('translateY-for-chat-container')
+    chatGPT.style.zIndex = zIndex()
 }, 1100)
 
