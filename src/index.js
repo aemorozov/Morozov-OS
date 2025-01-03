@@ -142,6 +142,7 @@ chatGPT.addEventListener('click', () => {
 })
 
 iconImgGPT.addEventListener('click', () => {
+    chatGPT.style.zIndex = zIndex()
     if (chatGPT.classList.contains('translateY-for-chat-container') && chatGPT.style.zIndex == zIndexActual) {
         chatGPT.classList.remove('translateY-for-chat-container')
         iconImgGPT.classList.remove('opacity1')
@@ -177,7 +178,7 @@ setTimeout(() => {
     // formToTelegramContainer.classList.add('translateY-for-form-to-telegram')
     // iconImgDownFormToTelegramButton.classList.add('opacity1')
     // formToTelegramContainer.style.zIndex = zIndex()
-    chatGPT.classList.add('translateY-for-chat-container')
-    chatGPT.style.zIndex = zIndex()
+    // chatGPT.classList.add('translateY-for-chat-container')
+    // chatGPT.style.zIndex = zIndex()
 }, 1100)
 

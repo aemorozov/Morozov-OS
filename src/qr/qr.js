@@ -7,7 +7,7 @@ const QRCodeLength = document.querySelector('.qr-code-length')
 const startValue = document.querySelector('.start-value')
 const prefix = document.querySelector('.prefix')
 const suffix = document.querySelector('.suffix')
-const selectPaperSize = document.querySelector('.selectPaperSize')
+// const selectPaperSize = document.querySelector('.selectPaperSize')
 const dataFromInputs = []
 const XLSdata = []
 const moreSettingsButton = document.querySelector('.more_settings_button')
@@ -38,7 +38,8 @@ function createData() {
         startValue.value,
         prefix.value,
         suffix.value,
-        selectPaperSize.value)
+        // selectPaperSize.value
+    )
 
     const data = createDataArray(dataFromInputs)
 
