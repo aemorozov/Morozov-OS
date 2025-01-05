@@ -7,7 +7,7 @@ html {
   font-weight: 400;
   color: aliceblue;
   min-width: 360px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   overflow: hidden;
 }
 
@@ -16,8 +16,10 @@ body {
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
-  height: 100vh;
-  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -388,8 +390,9 @@ input[type="number"] {
   font-size: 0.7rem;
   margin: 0px auto 5px auto;
   text-align: center;
-  max-width: 80px;
+  max-width: 60px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .morozov-os-container {
@@ -535,7 +538,8 @@ input[type="number"] {
   }
 
   .text-zone {
-    margin: 80px 0 0 0;
+    margin: 50px 0 0 0;
+    padding: 0 0 40px 0;
   }
 
   .text-readme {
@@ -554,7 +558,7 @@ input[type="number"] {
   }
 
   .content-with-content {
-    margin: 80px auto 0 auto;
+    margin: 50px auto 0 auto;
   }
 
   body {
@@ -602,7 +606,7 @@ input[type="number"] {
     border-radius: 0;
   }
   .form-to-telegram-content {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 
@@ -653,59 +657,8 @@ textarea {
   display: none;
 }
 
-@media screen and (max-width: 640px) {
-  .chat-global {
-    position: fixed;
-    background: #051208e0;
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    transform: translateX(0);
-  }
-  .chat-container {
-    max-height: calc(100% - 90px);
-    margin: 10px;
-  }
-  .bot-message {
-    background-color: #d4d4d1;
-  }
-  .top-line {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    background: none;
-    flex-direction: row-reverse;
-    height: 80px;
-    font-size: 1.5em;
-    border-bottom: 1px solid #9fa7b2;
-  }
-  .p-top-line {
-    color: whitesmoke;
-    margin-left: 0px;
-    font-size: unset;
-  }
-  .for-mobile-block {
-    display: block;
-  }
-
-  .slide-down-button {
-    color: whitesmoke;
-    background: none;
-    font-size: unset;
-  }
-  .slide-down-button:hover {
-    background: none;
-  }
-
-  .img-top-line {
-    display: none;
-  }
-}
-
 #messages {
-  padding-top: 10px;
+  padding-top: 20px;
   flex-grow: 1;
   padding-right: 3px;
   overflow-y: auto;
@@ -719,7 +672,7 @@ textarea {
     scrollbar-gutter: stable;
   }
   display: flex;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .message {
@@ -789,4 +742,63 @@ textarea {
   width: 100px;
   border-radius: 5px 0 0 5px;
   background-color: #2f3841;
+}
+
+@media screen and (max-width: 640px) {
+  .chat-global {
+    position: fixed;
+    background: #051208ee;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+  .chat-container {
+    max-height: calc(100% - 90px);
+    margin: 10px;
+  }
+  .bot-message {
+    background-color: #d4d4d1;
+  }
+  .top-line {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    background: none;
+    flex-direction: row-reverse;
+    height: 50px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #9fa7b2;
+  }
+  .p-top-line {
+    color: whitesmoke;
+    margin-left: 0px;
+    font-size: unset;
+  }
+  .for-mobile-block {
+    display: block;
+  }
+
+  .slide-down-button {
+    color: whitesmoke;
+    background: none;
+    font-size: unset;
+  }
+  .slide-down-button:hover {
+    background: none;
+  }
+
+  .img-top-line {
+    display: none;
+  }
+
+  .icon-img {
+    opacity: 1;
+  }
+
+  #messages {
+    font-size: 0.9em;
+  }
 }
