@@ -1,7 +1,7 @@
-const button = document.querySelector('.send_button')
+// You need chatId and token from telegram. Create token.js and add its.
+import { chatId, token } from './token';
 
-const token = '7589348026:AAHBEfuRD56okhcTmluscq8anz8pQ8lM4UY';
-const chatId = '432111822';
+const button = document.querySelector('.send_button')
 
 const nameInput = document.querySelector('.name')
 const contact = document.querySelector('.contact')
