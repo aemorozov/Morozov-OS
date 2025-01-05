@@ -2,7 +2,7 @@ Update January 05 2025. Version 1.1.4
 
 # Morozov OS, offline Snake and GPT Assistant
 
-Hello, after some months of work I am ready to present my website. This is not the first update, but this update is really important for me - I added interactive Assistant with Chat GPT API. But let’s start from the scratch.
+Hello, after few months of work I am ready to present my website. This is not the first update, but this update is really important for me - I added interactive Assistant with Chat GPT API. But let’s start from the scratch.
 
 New version of the Morozov OS includes:
 
