@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url(./img/08fb5e3d2374934e9296985d67bc8539.png);
+  background: url(./img/fon-stilnyi-minimalizm-70-foto-52.jpg?v2);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -336,8 +336,8 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-.icon:hover > .icon-img,
-.icon:hover > a > .icon-img {
+.icon:hover>.icon-img,
+.icon:hover>a>.icon-img {
   opacity: 1;
 }
 
@@ -348,9 +348,15 @@ input[type="number"] {
 
 .icon-img-readme,
 .icon-img-snake,
-.icon-img-form-to-telegram {
+.icon-img-form-to-telegram,
+.icon-img-ivoice {
   width: 38px;
 }
+
+.icon-img-ivoice {
+  margin-top: 4px;
+}
+
 /* 
 .icon-img-form-to-telegram {
   transform: translateX(-1px);
@@ -442,12 +448,12 @@ input[type="number"] {
   height: 100px;
 }
 
-.form-to-telegram-content > p {
+.form-to-telegram-content>p {
   text-align: left;
   margin: 0 10px;
 }
 
-.form-to-telegram-content > h2 {
+.form-to-telegram-content>h2 {
   margin: 10px 10px;
 }
 
@@ -487,6 +493,7 @@ input[type="number"] {
     height: 420px;
     /* transform: translateX(-60px) translateY(10px); */
   }
+
   .translateY-for-readme {
     /* transform: translateX(-60px) translateY(0px); */
     opacity: 1;
@@ -605,6 +612,7 @@ input[type="number"] {
     height: 100%;
     border-radius: 0;
   }
+
   .form-to-telegram-content {
     margin-top: 50px;
   }
@@ -667,10 +675,12 @@ textarea {
   scrollbar-width: none;
   scrollbar-color: #202023c3 #2c2e3054;
   transition: 0.3s ease;
+
   @supports (scrollbar-gutter: stable) {
     overflow-y: auto;
     scrollbar-gutter: stable;
   }
+
   display: flex;
   font-size: 1em;
 }
@@ -684,16 +694,19 @@ textarea {
 
   /* transition: opacity 0.1s ease; */
 }
+
 .user-message {
   background-color: #d1f7c4;
   color: #081205;
   align-self: flex-end;
 }
+
 .bot-message {
   background-color: #e1e1e1;
   color: #081205;
   align-self: flex-start;
 }
+
 #input-container {
   display: flex;
   border: 0;
@@ -704,6 +717,7 @@ textarea {
   box-shadow: 0px 1px 4px 2px rgba(30, 6, 6, 0.2);
   border-radius: 5px;
 }
+
 #user-input {
   flex-grow: 1;
   color: #fff;
@@ -714,9 +728,11 @@ textarea {
   border-radius: 5px 0 0 5px;
   background-color: #2c6c72;
 }
+
 #user-input::placeholder {
   color: #ccc;
 }
+
 #send-button,
 .close-button {
   padding: 10px;
@@ -755,13 +771,16 @@ textarea {
     left: 0;
     transform: translateX(0);
   }
+
   .chat-container {
     max-height: calc(100% - 60px);
     margin: 10px;
   }
+
   .bot-message {
     background-color: #d4d4d1;
   }
+
   .top-line {
     display: flex;
     position: absolute;
@@ -772,11 +791,13 @@ textarea {
     font-size: 1.1em;
     border-bottom: 1px solid #9fa7b2;
   }
+
   .p-top-line {
     color: whitesmoke;
     margin-left: 0px;
     font-size: unset;
   }
+
   .for-mobile-block {
     display: block;
   }
@@ -786,6 +807,7 @@ textarea {
     background: none;
     font-size: unset;
   }
+
   .slide-down-button:hover {
     background: none;
   }

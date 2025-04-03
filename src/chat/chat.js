@@ -37,6 +37,6 @@ async function sendMessage() {
         appendMessage(data.reply);
     } catch (error) {
         console.error("Error:", error);
-        appendMessage("Opps, some error! Tell Aleksei about it, please.");
+        appendMessage("Oops, some error! Tell Aleksei about it, please.");
     }
 }
