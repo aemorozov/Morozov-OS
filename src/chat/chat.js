@@ -17,7 +17,15 @@ function appendMessage(content, isUser = false) {
 }
 
 async function sendMessage() {
-  const message =
+  const message = userInput.value.trim();
+  if (!message) return;
+
+  // Добавляем сообщение пользователя
+  appendMessage(message, true);
+  userInput.value = "";
+
+  // Отправляем запрос на сервер
+  const fullMessage =
     `You are personal assistant for Aleksei Morozov. It is his resume:
 Frontend Developer (React, Next.js, Node.js, REST API)
 Bucharest, Romania (open to relocate)
@@ -51,23 +59,17 @@ Electronics Diagnostics and Repair Specialist
 Lenina19 | September 2015 – March 2022
 •	Full cycle of diagnostics and repair for electronics, including laptops and peripheral equipment.
 
-And here is a message from user:` + userInput.value.trim();
-  if (!message) return;
+And here is a message from user: ` + message;
 
-  // Добавляем сообщение пользователя
-  appendMessage(message, true);
-  userInput.value = "";
-
-  // Отправляем запрос на сервер
   try {
     const response = await fetch(
-      "https://chat-gpt-6-official-bot.vercel.app/api/webhook.js",
+      "https://chat-gpt-6-official-bot.vercel.app/pages/api/webhook.js",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({ fullMessage }),
       }
     );
     const data = await response.json();
