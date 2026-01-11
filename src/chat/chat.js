@@ -63,7 +63,7 @@ And here is a message from user: ` + message;
 
   try {
     const response = await fetch(
-      "https://chat-gpt-6-official-bot.vercel.app/pages/api/webhook",
+      "https://chat-gpt-6-official-bot.vercel.app/api/webhook",
       {
         method: "POST",
         headers: {
