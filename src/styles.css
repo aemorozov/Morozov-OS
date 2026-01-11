@@ -245,7 +245,8 @@ input[type="number"] {
 
 .author {
   width: 100%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 100;
   font-size: 10px;
   text-align: center;
@@ -336,8 +337,8 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-.icon:hover>.icon-img,
-.icon:hover>a>.icon-img {
+.icon:hover > .icon-img,
+.icon:hover > a > .icon-img {
   opacity: 1;
 }
 
@@ -416,7 +417,7 @@ input[type="number"] {
 }
 
 .morozov-os-container:hover {
-  height: 73px;
+  height: 51px;
 }
 
 .morozov-os-p {
@@ -448,12 +449,12 @@ input[type="number"] {
   height: 100px;
 }
 
-.form-to-telegram-content>p {
+.form-to-telegram-content > p {
   text-align: left;
   margin: 0 10px;
 }
 
-.form-to-telegram-content>h2 {
+.form-to-telegram-content > h2 {
   margin: 10px 10px;
 }
 
