@@ -30,7 +30,7 @@ async function sendMessage() {
 Frontend Developer (React, Next.js, Node.js, REST API)
 Bucharest, Romania (open to relocate)
 +40 (799) 29-30-14 | mr.aemorozov@gmail.com
-aemorozov.com | https://www.linkedin.com/in/aemorozov/ | https://github.com/aemorozov
+aemorozov.com (we are on that website now) | https://www.linkedin.com/in/aemorozov/ | https://github.com/aemorozov
 Languages: English, Russian
 Skills
 • Frontend: React, Next.js, JavaScript (ES6+), HTML5, CSS3, Performance optimization
@@ -63,7 +63,7 @@ And here is a message from user: ` + message;
 
   try {
     const response = await fetch(
-      "https://chat-gpt-6-official-bot.vercel.app/api/webhook",
+      "https://chat-gpt-6-official-bot.vercel.app/api/chat",
       {
         method: "POST",
         headers: {
@@ -72,10 +72,11 @@ And here is a message from user: ` + message;
         body: JSON.stringify({ fullMessage }),
       }
     );
+
     const data = await response.json();
-    appendMessage(data.reply);
-  } catch (error) {
-    console.error("Error:", error);
-    appendMessage("Oops, some error! Tell Aleksei about it, please.");
+    appendMessage(data.reply || "No reply from server", false);
+  } catch (err) {
+    console.error(err);
+    appendMessage("Server error", false);
   }
 }
