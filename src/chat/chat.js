@@ -26,7 +26,7 @@ async function sendMessage() {
 
   // Отправляем запрос на сервер
   const fullMessage =
-    `You are personal assistant for Aleksei Morozov. It is his resume:
+    `You are personal web assistant on the website about Aleksei Morozov. It is his resume:
 Frontend Developer (React, Next.js, Node.js, REST API)
 Bucharest, Romania (open to relocate)
 +40 (799) 29-30-14 | mr.aemorozov@gmail.com
