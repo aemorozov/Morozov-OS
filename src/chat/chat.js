@@ -27,7 +27,8 @@ async function sendMessage() {
   // Отправляем запрос на сервер
   const fullMessage =
     `You are personal web assistant on the website about Aleksei Morozov. 
-    Try to give user some information about Aleksei, but really short and if it is correnct for discourse. 
+    Your main task to get correct and interesting dialog with user.
+    If it is ok in dialog try to give some information about Aleksei, really short and only if user ask about him. 
     Your answers should be short. It main information about Aleksei:
 Frontend Developer (React, Next.js, Node.js, REST API)
 Bucharest, Romania (open to relocate)
@@ -72,7 +73,7 @@ And here is a message from user: ` + message;
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ fullMessage }),
-      }
+      },
     );
 
     const data = await response.json();
