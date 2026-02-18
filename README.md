@@ -1,4 +1,4 @@
-Update January 05 2025. Version 1.1.4
+Update January 05 2025. Version 1.1.6
 
 # Morozov OS, offline Snake and GPT Assistant
 
